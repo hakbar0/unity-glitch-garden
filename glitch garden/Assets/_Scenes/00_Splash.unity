@@ -229,7 +229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00010014, y: 9.2167}
+  m_AnchoredPosition: {x: 0.00010014, y: -2}
   m_SizeDelta: {x: 1600, y: 1219.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &442353692
@@ -405,6 +405,12 @@ MonoBehaviour:
   levelMusicChangeArray:
   - {fileID: 0}
   - {fileID: 8300000, guid: f5ca14d2bfa51354f8b122f27183ed53, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 1af2586e4161fc5408c65d54ee102a70, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!4 &505768559
 Transform:
   m_ObjectHideFlags: 0
