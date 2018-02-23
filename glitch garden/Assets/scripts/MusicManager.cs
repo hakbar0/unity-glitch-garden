@@ -1,5 +1,6 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class MusicManager : MonoBehaviour {
 
@@ -7,28 +8,26 @@ public class MusicManager : MonoBehaviour {
 
 	private AudioSource audioSource;
 
-	void Awake() {
+	void Awake (){
 		DontDestroyOnLoad (gameObject);
-		Debug.Log ("Don't destory on load: " + name);
+		Debug.Log ("Don't Destroy on load: " + name);
 	}
-	
+
 	void Start () {
 		audioSource = GetComponent<AudioSource>();
-		audioSource.volume = PlayerPrefsManager.GetMasterVolume();
 	}
 	
-	void OnLevelWasLoaded (int level) {
-		AudioClip thisLevelMusic = levelMusicChangeArray[level];
-		Debug.Log ("Playing clip: " + thisLevelMusic);
-		
-		if (thisLevelMusic) { // If there's some music attached
-			audioSource.clip = thisLevelMusic;
+	void OnLevelWasLoaded(int level){
+		AudioClip thisLevelMuisc = levelMusicChangeArray[level];
+			Debug.Log ("Playing clip:" + thisLevelMuisc);
+
+		if (thisLevelMuisc) {
+			audioSource.clip = thisLevelMuisc;
 			audioSource.loop = true;
 			audioSource.Play ();
 		}
 	}
-	
-	public void SetVolume (float volume) {
+	public void ChangeVolume (float volume){
 		audioSource.volume = volume;
 	}
 }

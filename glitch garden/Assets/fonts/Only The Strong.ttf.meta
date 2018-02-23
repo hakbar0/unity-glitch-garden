@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: ef7502fe4c91c054283acfbadd569dba
+timeCreated: 1518802639
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Only The Strong
+  fontNames:
+  - Only The Strong
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
